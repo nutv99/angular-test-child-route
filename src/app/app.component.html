@@ -1,0 +1,47 @@
+<style>
+  a { margin:20px;}
+</style>
+<div style="border:1px solid blue;padding:20px">
+  <hello name="{{ name }}"></hello>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button
+          type="button"
+          class="navbar-toggle collapsed"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-expanded="false"
+          aria-controls="navbar"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" routerLink="/home" routerLinkActive="active"
+          >Home</a
+        >
+        <a
+          class="navbar-brand"
+          routerLink="/department"
+          routerLinkActive="active"
+          >Department</a
+        >
+        <a class="navbar-brand" routerLink="/category" routerLinkActive="active"
+          >Category</a
+        >
+        <a class="navbar-brand" routerLink="/contact" routerLinkActive="active"
+          >Contact Us</a
+        >
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="container">
+  <br />
+  <br />
+
+  <router-outlet></router-outlet>
+</div>
+<!-- /.container -->
